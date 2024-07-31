@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Primeiro Trimestre </title>
+    
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+
+<h3> No presente trimestre você encontrará os seguintes conteúdos : </h3>
+
+    <ol type="I">
+
+
+        <li> Anuidades </li>
+        <ol type="a">
+            <li> Capitalização </li>
+            <li> Amortização </li>
+        </ol>
+    
+    
+        <li> Matrizes </li>
+        <ol type="a">
+            <li> Soma</li>
+            <li> Subtração</li>
+            <li> Multiplicação</li>
+            <li> Transposição </li>
+        </ol>
+        
+    
+        <li> Determinantes </li>
+    </ol>
+
+<h1 id="Anuidade"> Anuidades </h1>
+
+        <p>Eu entendi como anuidade, uma quantidade de pagamentos feita de forma constante e que não
+            necessariamente é feita "anualmente", pode ser feita também mensalmente, por exemplo.
+             Existem dois tipos principais de anuidades:</p>
+       
+        <h3>Fórmulas de Anuidade</h3>
+        <p>Para calcular, temos 2 fórmulas :</p>
+
+        <div class="formula">
+            <h4> Fórmula para achar o montante futuro </h4>
+            <p><code> M = P [(1 + i)^n - 1] / i</code></p>
+            <p>Onde:</p>
+            <ul>
+                <li><code>P</code> São prestações pagas</li>
+                <li><code>i</code> taxa de juros</li>
+                <li><code>n</code> Tempo/Periodos</li>
+            </ul>
+        </div>
+
+        <div class="formula">
+            <h4>Juros Composto</h4>
+            <p><code>M = C (1+i)^n  >   C = M / (1+i)^n </code></p>
+            <p><strong>Onde:</strong></p>
+            <ul>
+                <li><code>M</code> é o montante</li>
+                <li><code>C</code> é o capital</li>
+                <li><code>i</code> é a taxa de juros</li>
+                <li><code>n</code> é o tempo/periodo</li>
+            </ul>
+        </div>
+
+        <h3>Exemplo de Anuidade </h3>
+        <div class="exemplo">
+          <img src="img/exemplo1anuidade.PNG">
+          <p> Exemplo resolvido retirado do material da professora Valéria Lessa</p>
+          <h4> O exemplo acima é um exemplo de : CAPITALIZAÇÃO.</h4>
+        </div>
+
+        
+
+       
+
+        <h2>Amortização</h2>
+        <p>Eu entendi por amortização o processo de "acabar" com uma dívida, contando assim, com parcelas
+             do valor principal, bem como os juros que serão aplicados.</p>
+      
+
+        <h1>Fórmula de Amortização</h3>
+        <h2 class="formulaAmort">
+          <h4>Como fórmula para a amortização nós temos uma em que irá calcular o valor futuro após uma série de depositos :
+            <img src="img/formAmort.PNG">
+            <p>Captura de tela retirada do material da professora valéria Lessa</p>
+          </h4> 
+
+
+        <h3>Exemplo de Amortização</h3>
+        <div class="exemploAmort">
+            <p>Vamos supor que você pegou um empréstimo de R$ 5.000 a uma taxa de juros de 6% ao ano, e deseja pagar em 10 meses com parcelas fixas.</p>
+            <p>Usando a fórmula :</p>
+            <p>P = 5000 × [0.06 / 12 / (1 - (1 + 0.06 / 12)^-10)]</p>
+            <p>Calculando isso, obtemos:</p>
+            <p>P ≈ R$ 522,22</p>
+        </div>
+    
+
+
+
+
+
+    <h1 id="Matrizes"> Matrizes </h1>
+
+
+    <p>
+        Matrizes foi um conteúdo em que eu senti bastante dificuldade pruncipalmente por eu demorar para
+        entender a aplicação na vida real/prática. No começo eu não tinha criado interesse,
+         mas aí fui pesquisar
+        mais a fundo sobre a importância do estudo das matrizes para a área da programação e consegui ter mais
+        vontade de estudar. Assim, por matriz entendi que : É uma "tabela" de números
+         em ordem de linhas e colunas.
+        Onde os números são os elementos; cada elemento é "chamado" por um índice linha-coluna.
+        
+
+    <h3>1. Soma de Matrizes</h3>
+    <p>A soma de duas matrizes é realizada somando
+         os elementos correspondentes de cada uma. Para que essa soma seja possível, 
+         as duas matrizes devem ter a mesma dimensão.</p>
+    
+    <div class="formula">
+        <h4>Fórmula</h4>
+        <p>Dadas duas matrizes <code>A</code> e <code>B</code> de dimensões m × n, a soma C é :</p>
+        <p>C[m][n] = A[m][n] + B[m][n]</p>
+        <p>Onde:</p>
+        <ul>
+            <li><code>C[m][n]</code> é o elemento da matriz resultante na posição de ordem <code>(m, n)</code></li>
+            <li><code>A[m][n]</code> e <code>B[m][n]</code> são os elementos
+                 <code>A</code> e <code>B</code> nas posições de ordem <code>(m, n)</code></li>
+        </ul>
+    </div>
+
+    <h3>Exemplo de Soma</h3>
+    <div class="exemploSMat">
+        <p><code>A</code> e <code>B</code>:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Matriz A</th>
+                    <th>Matriz B</th>
+                    <th>Matriz C (Resultado)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>1  2</code></td>
+                    <td><code>4  5</code></td>
+                    <td><code>5  7</code></td>
+                </tr>
+                <tr>
+                    <td><code>3  4</code></td>
+                    <td><code>6  7</code></td>
+                    <td><code>9  11</code></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>A soma <code>C = A + B</code> resulta em :</p>
+        <table>
+            <tr>
+                <td><code>5  7</code></td>
+            </tr>
+            <tr>
+                <td><code>9  11</code></td>
+            </tr>
+        </table>
+    </div>
+
+    <h3> Subtração de Matrizes</h3>
+    <p>Subtrai-se os elementos correspondentes em ordem de ambas as matrizes. Também é necessário ter 
+        a mesma dimensão.
+    </p>
+
+    
+    <h3>Exemplo de subtração </h3>
+    <div class="exemploSubMat">
+        <p> A e B:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Matriz A</th>
+                    <th>Matriz B</th>
+                    <th>Matriz C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>5  7</code></td>
+                    <td><code>1  2</code></td>
+                    <td><code>4  5</code></td>
+                </tr>
+                <tr>
+                    <td><code>9  11</code></td>
+                    <td><code>3  4</code></td>
+                    <td><code>6  7</code></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>A subtração <code>C = A - B</code> dá o resultado :</p>
+        <table>
+            <tr>
+                <td><code>4  5</code></td>
+            </tr>
+            <tr>
+                <td><code>6  7</code></td>
+            </tr>
+        </table>
+    </div>
+
+    <h3> Multiplicação</h3>
+    <p>
+        A multiplicação de matrizes foi a minha predileta, mas também a mais difícil.
+        Para poder multiplicar matrizes, elas devem ter o número de colunas (da primeira matriz) 
+        igual ao numero de linhas da segunda matriz. ficando assim : y n  =  n x.
+        A matriz que terá o resultado terá o numero de linhas da
+         primeira matriz e o número de colunas da segunda.
+ 
+
+    <h3>Exemplo de multiplicação</h3>
+    <div class="exemplo">
+        <p>A e B:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Matriz A</th>
+                    <th>Matriz B</th>
+                    <th>Matriz C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>1  2</code></td>
+                    <td><code>5  6</code></td>
+                    <td><code>17  22</code></td>
+                </tr>
+                <tr>
+                    <td><code>3  4</code></td>
+                    <td><code>7  8</code></td>
+                    <td><code>39  50</code></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Para calcular a matriz C = A × B</p>
+        <p><code>C[1][1] = (1 × 5) + (2 × 7) = 5 + 14 = 17</code></p>
+        <p><code>C[1][2] = (1 × 6) + (2 × 8) = 6 + 16 = 22</code></p>
+        <p><code>C[2][1] = (3 × 5) + (4 × 7) = 15 + 28 = 43</code></p>
+        <p><code>C[2][2] = (3 × 6) + (4 × 8) = 18 + 32 = 50</code></p>
+    </div>
+
+    <h3> Transposição</h3>
+    <p>
+        É a operação que vai trocar as linhas pelas colunas ou ao contrário. Tem um número elevado à 
+        uma potência.
+        
+    <h3>Exemplo de transposição</h3>
+    <div class="exemplo">
+       <img src="img/transposicaoMatriz.jpg" id="drive">
+       <p> O exemplo acima foi retirado da prova feita em dupla em que eu realizei-a com meu colega Arthur. 
+        A questão foi corrigida e está correta.
+       </p>
+
+
+<h1 id="Determinantes"> Determinantes </h1>
+
+<h2>Definição</h2>
+        <p>
+            Pesquisando melhor sobre qual a função de um determinante na prática,
+             vi que eles são utilizados para a resolução de sistemas lineares na matemática ou em
+             áreas que irão utilizar desse conhecimento. Ele é calculado por meio de uma matriz quadrada
+              (e se não for quadrada, ela é transformada em uma através de regras).
+            
+                 
+        <h3> Determinante de uma matriz de ordem : 2</h3>
+        <p>Para uma matriz <code>2 × 2</code>, o determinante é calculado da seguinte forma:</p>
+
+        <div class="formula">
+            <h4>Fórmula</h4>
+            <p> <code>A</code> :</p>
+            <table>
+                <tr>
+                    <td><code>A = | a  b |</code></td>
+                </tr>
+                <tr>
+                    <td><code>    | c  d |</code></td>
+                </tr>
+            </table>
+            <p>O determinante de <code>A</code>, det(A), é :</p>
+            <p><code>det(A) = a × d - b × c</code></p>
+        </div>
+
+        <h3>Exemplo de Determinante de Ordem 2</h3>
+        <div class="exemplo">
+            <p>Exemplo :</p>
+            <table>
+                <tr>
+                    <td><code>1  2</code></td>
+                </tr>
+                <tr>
+                    <td><code>3  4</code></td>
+                </tr>
+            </table>
+            <p>Cálculo pra achar o determianante :</p>
+            <p><code>det(A) = (1 × 4) - (2 × 3) = 4 - 6 = -2</code></p>
+            <p>Então o det(A) é :  <code>-2</code>.</p>
+        </div>
+
+        <h3>Determinante matriz de ordem 3</h3>
+        <p>Para uma matriz <code>3 × 3</code>, o determinante pode ser calculado usando a 
+            Regra de Chió (ou Regra de Sarrus) para matrizes 3x3. 
+            Revendo o material e pesquisando mais na internet também tem a regra de Crammer
+        mas nós trabalhamos na de Chió e ela é mais fácil também. </p>
+
+        <div class="formula">
+            <h4>Fórmula</h4>
+            <p> Utilizando a regra de Chió, nós fazemos a seguinte operação com a matriz : </p>
+            <img src="img/Determinante.jpg" id="drive">
+            <p> no exemplo acima, também retirado da prova, eu acabei me confundindo na resolução e errei o 
+                cálculo, contudo, deu para entender o que tem que ser feito para achar o determinante : 
+                "Aumentar" o número de colunas e linhas (copiando as primeiras) até que se torne uma matriz quadrada.
+            </p>
+
+<h2> Auto Avaliação : </h2>
+<p> Eu sinceramente não achei esses conteúdos difíceis, sei que se eu tivesse prestado
+    mais atenção, me interessando mais, eu teria entendido melhor e tirado uma nota maior na prova. Ao que 
+    se refere ao conteúdo passado em si, eu achei que foi bem tranquilo, não foi nada muito pesado,
+    em cada aula nós viamos um pouco, e tinhamos tempo para resolver os exercícios. 
+    Gosto muito da abordagem da professora em buscar trazer um sentido na prática/vida real da função de 
+    cada conteúdo passado.
+</p>
+      
+
+
+
+
+
+
+
+    <script type="text/javascript" src="../portfolioMat2024/js.js">       
+    </script>
+</body>
+</html>
+
+
